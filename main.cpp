@@ -1,6 +1,17 @@
 #include <iostream>
 
-void secondPatter(int n){
+void firstPattern(int n){
+    for(int i = 0; i<n; i++){
+      for (int j = 0; j<=n; j++){
+          std::cout << "*";
+      }
+
+        std::cout << std::endl;
+    }
+
+}
+
+void secondPattern(int n){
     for(int  i = n; i >= 1; i--){
         for (int j = i ; j > 0; j--){
             std::cout << "*";
@@ -64,8 +75,9 @@ void hourGlass(int n) {
 }
 
 int main() {
-    int n =10;
-    hourGlass(n);
+    int n =11;
+   // hourGlass(n);
+   firstPattern(n);
 //
 //    //invert a triangle first for loop dictates the number of rows second will be used to shape the triangle
 //// 1. create a function that takes in a param of n
